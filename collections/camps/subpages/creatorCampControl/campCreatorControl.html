@@ -1,0 +1,28 @@
+<template name="campCreatorControls">
+  {{#with currentCamp}}
+    {{#if this.isCreator}}
+        <div class="row">
+            <div class="col-md-12">
+              <hr>
+                <h3>
+                    You are the creator of this Camp
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                    <a href="/camps/{{this._id}}/edit" class="btn btn-block btn-success">
+                        Edit this camp
+                    </a>
+            </div>
+            <div class="col-md-6">
+                    <a id="deleteCampButton" class="btn btn-block btn-danger">
+                        Delete this camp
+                    </a>
+            </div>
+        </div>
+    {{/if}}
+  {{/with}}
+</template>

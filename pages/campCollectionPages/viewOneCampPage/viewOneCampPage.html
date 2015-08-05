@@ -1,0 +1,13 @@
+<template name="viewOneCampPage">
+
+    <div class="container">
+
+        {{> findOneCamp campId=id}}
+
+        {{> campCreatorControls campId=id}}
+
+        {{> findReviews docId=id collectionName="camps"}}
+
+    </div>
+
+</template>
