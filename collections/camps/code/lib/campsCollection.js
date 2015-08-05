@@ -44,6 +44,11 @@ Camps.attachSchema(new SimpleSchema({
         type: String
     },
 
+    type:{
+      type:String,
+      allowedValues:["sports","educational","art"]
+    },
+
     /*
         The file attribute is a custom orion attribute
         This is where orion does its magic. Just set
