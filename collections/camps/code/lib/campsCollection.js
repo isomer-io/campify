@@ -77,6 +77,13 @@ Camps.attachSchema(new SimpleSchema({
         min:0
     },
 
+    startDate:{
+      type:Date
+    },
+    endDate:{
+      type:Date
+    },
+
     /*
     This attribute sets the user id to that of the user that created
     this camp automatically.  */
@@ -85,8 +92,6 @@ Camps.attachSchema(new SimpleSchema({
     createdAt: orion.attribute('createdAt'),
 
     updatedAt: orion.attribute('updatedAt')
-
-
 }));
 
 /*
