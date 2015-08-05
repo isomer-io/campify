@@ -10,16 +10,20 @@ var childSchema = new SimpleSchema({
     optional: true,
     public:true
   },
-  lastName: {
-    type: String,
-    optional:true,
-    public:true
-  },
   firstName: {
     type: String,
     optional:true,
     public:true
   },
+  lastName: {
+    type: String,
+    optional:true,
+    public:true
+  },
+  gender:{
+    type:String,
+    allowedValues:["male","female"]
+  }
 });
 
 Schema.UserProfile = new SimpleSchema({

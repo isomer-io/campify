@@ -70,6 +70,14 @@ Camps.attachSchema(new SimpleSchema({
         type: String
     },
 
+    age:{
+      type:Number
+    },
+
+    gender:{
+      type:String,
+      allowedValues:["male","female"]
+    },
 
     price: {
         type:Number,
