@@ -20,6 +20,11 @@ var childSchema = new SimpleSchema({
     optional:true,
     public:true
   },
+    gender: {
+        type: String,
+        optional:true,
+        public:true
+    },
 });
 
 Schema.UserProfile = new SimpleSchema({

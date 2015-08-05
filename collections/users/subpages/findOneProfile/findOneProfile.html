@@ -10,9 +10,16 @@
     {{#with currentProfile}}
     <div class="row">
         <div class="col-md-12">
-            <h2>
-                {{this.birthday}}
-            </h2>
+            <ul>
+            {{#each children}}
+                <li>
+                    <div class="row">Name: {{firstName}} {{lastName}}</div>
+                    <div class="row">Birthday: {{birthday}}</div>
+                    <div class="row">Gender: {{gender}}</div>
+
+                </li>
+            {{/each}}
+            </ul>
         </div>
     </div>
     {{/with}}

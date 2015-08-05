@@ -7,11 +7,14 @@ if (Meteor.isClient) {
   });
 
   Template.findOneProfile.helpers({
-    currentProfile: function() {
+    currentProfile: function () {
       var userId = Template.currentData().userId;
       var user = Meteor.users.findOne({_id: userId});
       return user.profile;
-    }
+    },
+      birthday:function(){
+          return this.birthday.getMonth()+ '/' + this.birthday.getDay() +"/" +  this.birthday.getFullYear();
+      }
   });
 
 }
