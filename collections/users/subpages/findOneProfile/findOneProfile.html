@@ -8,11 +8,16 @@
 
 <template name="findOneProfile">
     {{#with currentProfile}}
+
     <div class="row">
         <div class="col-md-12">
-            <h2>
-                {{this.birthday}}
-            </h2>
+            <ul>
+              {{#each this.children}}
+                <li>
+                  {{this.lastName}}
+                </li>
+              {{/each}}
+            </ul>
         </div>
     </div>
     {{/with}}
