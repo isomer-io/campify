@@ -6,7 +6,6 @@
 
 meteor-platform
 orionjs:core
-orionjs:bootstrap
 orionjs:filesystem
 orionjs:file-attribute
 orionjs:summernote
@@ -21,12 +20,9 @@ aldeed:autoform
 meteorhacks:fast-render
 spiderable
 multiply:iron-router-progress
-peppelg:bootstrap-3-modal
 aldeed:delete-button
 matb33:collection-hooks
 ongoworks:security
-fortawesome:fontawesome
-twbs:bootstrap
 ccorcos:clientside-image-manipulation
 jonblum:jquery-cropper
 msavin:mongol
@@ -42,3 +38,6 @@ pulsarjs:reviews
 pulsarjs:navbar
 autopublish
 lukemadera:autoform-googleplace
+peppelg:bootstrap-3-modal
+aldeed:tabular
+bootswatch:yeti
