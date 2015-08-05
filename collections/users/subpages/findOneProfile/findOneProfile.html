@@ -12,11 +12,14 @@
     <div class="row">
         <div class="col-md-12">
             <ul>
-              {{#each this.children}}
-                <li>
-                  {{this.lastName}}
+            {{#each children}}
+                <li class="list-group-item">
+                    <div class="list-group-item-heading">Name: {{firstName}} {{lastName}}</div>
+                    <div class="list-group-item-heading">Birthday: {{birthday}}</div>
+                    <div class="list-group-item-heading">Gender: {{gender}}</div>
+
                 </li>
-              {{/each}}
+            {{/each}}
             </ul>
         </div>
     </div>
